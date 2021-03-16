@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+:root{
+    --pink:hsl(322, 100%, 66%);
+    --p-cyan:hsl(193, 100%, 96%);
+    --d-cyan:hsl(192, 100%, 9%);
+    --grey-blue:hsl(208, 11%, 55%);
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-image: url(images/bg-hero-desktop.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--p-cyan);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+}
+
+.hero-container{
+    display: flex;
+    padding: 1.5rem 2.5rem;
+}
+.hero .hero-container .right{
+    max-width: 55%;
+    padding: 1.5rem 2.5rem;
+}
+.hero .hero-container .right img{
+    width: 100%;
+    height: 100%;
+}
+.hero .hero-container .left{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero .hero-container .left h1{
+    font-size: 3rem;
+}
+.hero .hero-container .left a{
+    justify-self: flex-start;
+    align-self: flex-start;
+    background-color: var(--pink);
+    color: var(--p-cyan);
+    font-weight:400 ;
+    font-size: 0.9rem;
+    padding:1rem 3.7rem ;
+}
+.hero .hero-container .left a:hover{
+    opacity: 0.7;
+}
+.wrapper{
+    padding: 5rem 7rem;
+    margin-bottom: 7rem;
+}
+.card .right{
+    width: 50%;
+}
+.card .left{
+    width: 50%;
+    padding: 0 2.5rem;
+}
+.card .right img{
+    height: 100%;
+    width: 100%;
+}
+.card .left img{
+    height: 100%;
+    width: 100%;
+}
+.content-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.content-text h1{
+    color: var(--d-cyan);
+}
+.floating{
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    
+}
+.floating .card-float .btn{
+    background-color: var(--pink);
+    color: white;
+}
+.floating .card-float h1{
+    color: var(--d-cyan);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-color: var(--d-cyan);
+    padding-top: 7rem;
+    
+}
+.container-f{
+    display: flex;
+    flex-direction: row;
+}
+.card-float{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: var(--grey-blue);
+    border-radius: 0.6rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    margin: 2rem 0.8rem;
+    top: -190px;
+    z-index: 99;
+    text-align: center;
+}
+.card-float .btn{
+    width: 60%;
+    align-self: center;
+}
+.f-col1,.f-col2,.f-col3,.f-col4{
+    max-width: 40%;
+    padding: 0 3rem;
+}
+.f-col1{
+    padding-left:0 ;
+}
+.f-col1 ul,.f-col2 ul,.f-col3 ul,.f-col4 ul{
+    list-style: none;
+    color: white;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+.footer-list > *{
+    margin-top: 1rem;
+}
+
+.logo-f{
+    margin-left: 2.5rem;
+    filter: invert(90%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
+}
+
+.social{
+    display: flex;
+    padding-right: 2rem;
+}
+.social > *{
+    padding-right: 1rem;
+
+}
+.social li a{
+    font-size: 0.9rem;
+    line-height: 1rem;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50%;
+    padding: 0.5rem 0.6rem;
+}
+.social li a:hover{
+    color: var(--pink);
+    border: 1px solid var(--pink);
+    transition: 1s ease;
+}
+.fa-facebook-f{
+    padding: 4px 3px;
+}
+.copy p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* utilities */
+.btn{
+    display: block;
+    background-color: white;
+    padding: 0.8rem 3.5rem ;
+    border: 0;
+    border-radius: 2rem;
+    box-shadow: 0 1px 5px rgba(199, 194, 194, 0.8);
+    transition: all 500ms;
+    text-align: center;
+    text-decoration: 0;
+    color: var(--d-cyan);
+}
+.btn:hover{
+    color: var(--grey-blue);
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    color: var(--grey-blue);
+    border-radius: 0.6rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin: 2rem 0.8rem;
+    max-height: 500px;    
+}
+p{
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    margin-top: 0;
+}
+.white{
+    color: white;
+}
+
