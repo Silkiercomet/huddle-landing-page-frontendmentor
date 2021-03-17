@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="https://kit.fontawesome.com/8a686341d0.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
-
+  <link rel="stylesheet" href="styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -20,8 +20,8 @@
       <div class="logo">
         <img src="images/logo.svg" alt="logo of Hubble">
       </div>
-      <div class="btn">
-        <a href="#">Try It Free</a>
+      <div class="container">
+        <a href="#" class="btn">Try It Free</a>
       </div>
     </nav>
     <div class="hero-container">
@@ -37,11 +37,13 @@
     </div>    
   </div>
   <div class="wrapper">
-    <div class="card">
+    <div class="card card-1">
       <div class="left">
+        <div class="content-text">
         <h1> Grow Together</h1>
         <p> Generate meaningful discussions with your audience and build a strong, loyal community. 
           Think of the insightful conversations you miss out on with a feedback form. </p>
+        </div>
       </div>
       <div class="right">
         <img src="images/illustration-grow-together.svg" alt="grow Together">
@@ -51,21 +53,25 @@
       <div class="left">
         <img src="images/illustration-flowing-conversation.svg" alt="">
       </div>
-      <div class="right">
-        <h1>Flowing Conversations</h1>
+      <div class="right" >
+        <div class="content-text">
+        <h1 >Flowing Conversations</h1>
         <p>
           You wouldn't paginate a conversation in real life, so why do it online? Our threads 
           have just-in-time loading for a more natural flow.
         </p>
+        </div>
       </div>
     </div>
-    <div class="card">
+    <div class="card card-1">
       <div class="left">
-        <h1>Your Users</h1>
-        <p>
+        <div class="content-text">
+        <h1 >Your Users</h1>
+        <p >
           It takes no time at all to integrate Huddle with your app's authentication solution. 
           This means, once signed in to your app, your users can start chatting immediately.
         </p>
+        </div>
       </div>
       <div class="right">
         <img src="images/illustration-your-users.svg" alt="">
@@ -78,42 +84,53 @@
       <a href="#" class="btn">Get Started For Free</a>
     </div>
   </div>
-  <footer style="display: flex;">
-    <div class="f-col1">
-      <ul>
+
+  <footer class="footer">
+    <div class="logo-f">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="container-f">
+     <div class="f-col1">
+      <ul class="footer-list">
         <li>
-          <img src="images/logo.svg" alt="">
-        </li>
-        <li>
-          <i></i>
+          <i ><img  src="images/icon-location.svg" alt=""></i>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
+          incididunt ut labore et dolore magna aliqua
         </li>
         <li>
-          <i></i>
+          <i ><img  src="images/icon-phone.svg" alt=""></i>
           +1-543-123-4567
         </li>
         <li>
-          <i></i>
+          <i ><img  src="images/icon-email.svg" alt=""></i>
           example@huddle.com
         </li>
       </ul>
-    </div>
-    <div class="f-col2">
-      <ul>
-        <li>About Us</li>
-        <li>What We Do</li>
-        <li>FAQ</li>
+     </div>
+     <div class="f-col2">
+      <ul class="footer-list">
+        <li><a href="#" class="white">About Us</a></li>
+        <li><a href="#" class="white">What We Do</a></li>
+        <li><a href="#" class="white">FAQ</a></li>
+      </ul>
+     </div>
+     <div class="f-col3">
+      <ul class="footer-list">
+        <li><a href="#" class="white">Career</a></li>
+        <li><a href="#" class="white">Blog</a></li>
+        <li><a href="#" class="white">Contact Us</a></li>
       </ul>
     </div>
-    <div class="f-col3">
-      <ul>
-        <li>Career</li>
-        <li>Blog</li>
-        <li>Contact Us</li>
+    <div class="f-col4">
+      <ul class="social">
+        <li><a href="#" class="white"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" class="white"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" class="white"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </div>
-    <div class="f-col4"></div>
+    
+  </div>
+  <div class="copy"><p>Copyright 2018 Huddle. All rights reserved.</p> </div>
   </footer>
 
   
@@ -151,13 +168,13 @@
   
   
 
-  &copy; Copyright 2018 Huddle. All rights reserved.
+  
 
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
 </html>
